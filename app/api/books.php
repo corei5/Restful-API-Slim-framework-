@@ -37,7 +37,7 @@ $app->get('/api/books/{id}',function($request){
 
   //echo "The id is ".$id;
 
-  $query = "select * from catalog_category_product order by product_id=$id";
+  $query = "select * from catalog_category_product where product_id=$id";
   $result = $mysqli->query($query);
 
 
